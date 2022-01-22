@@ -1,0 +1,7 @@
+bb-gpio (1.0.0) bullseye; urgency=low
+
+  * Update to use the new Machinekit-HAL packaging scheme
+  * Add simple Debian packaging
+  * Add a CMake based buildsystem
+
+ -- Jakub Fišer <jakub.fiser@eryaf.com>  Sat, 22 Jan 2020 10:00:00 +0200

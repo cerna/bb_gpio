@@ -10,11 +10,11 @@
 *
 ********************************************************************/
 
-#include "rtapi.h"              /* RTAPI realtime OS API */
-#include "rtapi_app.h"          /* RTAPI realtime module decls */
-#include "rtapi_errno.h"        /* EINVAL etc */
-#include "hal.h"                /* HAL public API decls */
-#include "hal_priv.h"
+#include "runtime/rtapi.h"              /* RTAPI realtime OS API */
+#include "runtime/rtapi_app.h"          /* RTAPI realtime module decls */
+#include "runtime/rtapi_errno.h"        /* EINVAL etc */
+#include "hal/hal.h"                /* HAL public API decls */
+#include "hal/hal_priv.h"
 #include "bb_gpio.h"
 #include <sys/mman.h>
 
@@ -22,6 +22,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <fcntl.h>
+#include <stdio.h>
 
 MODULE_AUTHOR("John Allwine");
 MODULE_DESCRIPTION("Driver for GPIO pins on Beaglebone Boards using /dev/mem");

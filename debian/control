@@ -1,0 +1,25 @@
+Source: bb-gpio
+Section: misc
+Priority: optional
+Maintainer: MachinekitBot <machinekit@eryaf.com>
+Build-Depends:
+    dh-cmake,
+    dh-cmake-compat (= 1),
+    dh-sequence-cpack,
+    debhelper-compat (= 12),
+    debhelper (>= 10),
+    libmachinekit-hal-dev,
+    libgpiod-dev
+Standards-Version: 4.5.1
+Homepage: https://github.com/PocketNC/bb_gpio
+
+
+Package: modbb-gpio
+Architecture: any
+Multi-Arch: same
+Depends:
+    ${shlibs:Depends},
+    ${misc:Depends},
+    machinekit-hal
+Description: BeagleBone Black GPIO Driver for Machinekit-HAL
+ Managed HAL driver module for BeagleBone Black GPIO
